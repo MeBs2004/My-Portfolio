@@ -7,7 +7,7 @@
 }
 
 .work-section h2 {
-  font-size: clamp(2.2rem, 6vw, 4.4rem);
+  font-size: 70px;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 50px;
@@ -59,7 +59,6 @@
   display: flex;
   gap: 30px;
   align-items: flex-start;
-  min-width: 0;
 }
 
 .carousel-number h3 {
@@ -77,7 +76,7 @@
 }
 
 .carousel-details h4 {
-  font-size: clamp(1.25rem, 2.7vw, 1.75rem);
+  font-size: 28px;
   font-weight: 500;
   margin: 0;
 }
@@ -86,7 +85,7 @@
   font-weight: 200;
   color: #adacac;
   margin: 0;
-  font-size: clamp(0.9rem, 1.7vw, 1rem);
+  font-size: 16px;
 }
 
 .carousel-tools {
@@ -105,8 +104,7 @@
   font-weight: 200;
   color: #adacac;
   margin: 6px 0 0;
-  font-size: clamp(0.85rem, 1.7vw, 0.95rem);
-  line-height: 1.35;
+  font-size: 15px;
 }
 
 .carousel-image-wrapper {
@@ -280,7 +278,6 @@
 
   .carousel-info {
     width: 100%;
-    gap: 16px;
   }
 
   .carousel-image-wrapper {
@@ -294,11 +291,11 @@
   }
 
   .carousel-arrow-left {
-    left: 6px;
+    left: 10px;
   }
 
   .carousel-arrow-right {
-    right: 6px;
+    right: 10px;
   }
 }
 
@@ -324,55 +321,11 @@
     gap: 20px;
   }
 
-  .carousel-info {
-    flex-direction: column;
-  }
-
-  .carousel-number h3 {
-    font-size: 30px;
-  }
-
-  .carousel-tools {
-    margin-top: 10px;
-  }
-
   .carousel-slide {
     padding: 30px 0;
   }
 
   .work-image img {
     max-height: 250px;
-  }
-
-  .carousel-arrow {
-    top: auto;
-    bottom: -56px;
-    transform: none;
-  }
-
-  .carousel-arrow-left {
-    left: calc(50% - 52px);
-  }
-
-  .carousel-arrow-right {
-    right: calc(50% - 52px);
-  }
-
-  .carousel-dots {
-    margin-top: 74px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .carousel-slide {
-    padding: 18px 0;
-  }
-
-  .carousel-details h4 {
-    font-size: 1.1rem;
-  }
-
-  .carousel-tools p {
-    font-size: 0.82rem;
   }
 }
