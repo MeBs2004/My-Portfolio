@@ -16,7 +16,7 @@
   max-width: calc(100% - 15px);
 }
 .about-me h3 {
-  font-size: 25px;
+  font-size: clamp(1.2rem, 3.4vw, 1.75rem);
   text-transform: uppercase;
   letter-spacing: 7px;
   font-weight: 400;
@@ -24,10 +24,21 @@
 }
 
 .about-me p {
-  font-size: 33px;
+  font-size: clamp(1.1rem, 4.6vw, 2.1rem);
   font-weight: 600;
-  line-height: 36px;
+  line-height: 1.2;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    max-width: 100%;
+    padding-top: 20px;
+  }
+
+  .about-me h3 {
+    letter-spacing: 4px;
+  }
 }
 
 @media only screen and (min-width: 600px) {

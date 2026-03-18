@@ -8,7 +8,7 @@
 }
 
 .contact-section h3 {
-  font-size: 60px;
+  font-size: clamp(2rem, 6vw, 3.75rem);
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
@@ -36,13 +36,14 @@
 }
 
 a.contact-social {
-  font-size: 25px;
+  font-size: clamp(1rem, 2.4vw, 1.55rem);
   border-bottom: 1px solid #ccc;
+  width: fit-content;
 }
 
 .contact-box h2 {
   font-weight: 400;
-  font-size: 23px;
+  font-size: clamp(1.05rem, 2.3vw, 1.45rem);
   margin: 0;
 }
 
@@ -51,7 +52,7 @@ a.contact-social {
 }
 
 .contact-box h5 {
-  font-size: 20px;
+  font-size: clamp(0.95rem, 2vw, 1.25rem);
   font-weight: 500;
   line-height: 20px;
   display: flex;
@@ -97,6 +98,10 @@ a.contact-social {
     gap: 40px;
   }
 
+  .contact-box h2 {
+    line-height: 1.35;
+  }
+
   .contact-flex p {
     margin-bottom: 0px;
   }
@@ -112,5 +117,15 @@ a.contact-social {
 
   .contact-container {
     width: calc(100% - 25px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-flex {
+    gap: 28px;
+  }
+
+  a.contact-social {
+    border-bottom-style: dashed;
   }
 }
